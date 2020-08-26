@@ -12,6 +12,8 @@ public class gmailLoginTest {
 
     @Test
     public void login() throws InterruptedException {
+
+        // chromedriver
         System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.gmail.com");
@@ -21,6 +23,7 @@ public class gmailLoginTest {
         useremail.sendKeys("kkjavatest@gmail.com",Keys.ENTER);
         Thread.sleep(3000);
 
+        // password
         WebElement password = driver.findElement(By.name("password"));
         password.sendKeys("Java12345",Keys.ENTER);
         Thread.sleep(5000);
@@ -36,5 +39,8 @@ public class gmailLoginTest {
         } else {
             System.out.println("Test failed");
         }
+
+        //close
+        driver.quit();
     }
 }
