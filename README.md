@@ -46,8 +46,8 @@ An example of [pom.xml](https://github.com/kk289/Automate-Selenium-Login-With-Ja
 
     <dependencies>
 
-	    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java-->
-        <dependency>
+       	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java-->
+       	<dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
@@ -155,7 +155,7 @@ I had issue on my Macbook where I couldnt use chromedriver just by mentioning it
 </details>
 <br>
 
-Let's run the "DropDownTest" class. We get following result: 
+Let's run the "gmailLoginTest" class. We get following result: 
 
 <p align="center">
 	<img width="900px" src="Image/login1.png" align="center"/>
