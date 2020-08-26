@@ -98,6 +98,7 @@ An example of [pom.xml](https://github.com/kk289/Automate-Selenium-Login-With-Ja
 ```
 package mailLogin;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -114,17 +115,15 @@ public class gmailLoginTest {
         driver.get("https://www.gmail.com");
 
         // email
-        // Replace 'example@gmail.com' with your gmail address
-        driver.findElement(By.id("identifierId")).sendKeys("example@gmail.com",Keys.ENTER);
+        WebElement useremail = driver.findElement(By.id("identifierId"));
+        useremail.sendKeys("kkjavatest@gmail.com",Keys.ENTER);
         Thread.sleep(3000);
 
-        // password
-        // Replace "xxx" with your email password
-        driver.findElement(By.name("password")).sendKeys("xxx",Keys.ENTER); 
-        
-        Thread.sleep(6000);
+        WebElement password = driver.findElement(By.name("password"));
+        password.sendKeys("Java12345",Keys.ENTER);
+        Thread.sleep(5000);
 
-        // Assertion
+        // Assertion...inbox..
         String actualUrl = "https://mail.google.com/mail/u/0/#inbox";
         String expectedUrl = driver.getCurrentUrl();
 
