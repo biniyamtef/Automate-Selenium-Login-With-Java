@@ -62,28 +62,28 @@ An example of [pom.xml](https://github.com/kk289/Automate-Selenium-Login-With-Ja
             <scope>test</scope>
         </dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.testing -->
+	<!-- https://mvnrepository.com/artifact/org.testing -->
         <dependency>
-      		<groupId>org.testng</groupId>
-      		<artifactId>testng</artifactId>
-      		<version>6.14.2</version>
-      		<scope>test</scope>
+	    <groupId>org.testng</groupId>
+      	    <artifactId>testng</artifactId>
+            <version>6.14.2</version>
+      	    <scope>test</scope>
     	</dependency>
 
     	<dependency>
-      		<groupId>org.example</groupId>
-      		<artifactId>AutomationJava</artifactId>
-      		<version>1.0-SNAPSHOT</version>
-      		<scope>test</scope>
+      	    <groupId>org.example</groupId>
+      	    <artifactId>AutomationJava</artifactId>
+      	    <version>1.0-SNAPSHOT</version>
+      	    <scope>test</scope>
     	</dependency>
 
     	<dependency>
-      		<groupId>junit</groupId>
-     		<artifactId>junit</artifactId>
-      		<version>4.11</version>
-      		<scope>test</scope>
-   		</dependency>
-
+      	    <groupId>junit</groupId>
+     	    <artifactId>junit</artifactId>
+      	    <version>4.11</version>
+      	    <scope>test</scope>
+	</dependency>
+	
    </dependencies>
 
 </project>
